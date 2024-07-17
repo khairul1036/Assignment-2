@@ -163,14 +163,25 @@ main > section{
     font-size: 1rem;
     color: rgba(255, 255, 255, 65%);
 }
-
 /* habits section style  */
 .habit-container{
-
     text-align: center;
-
 }
-
+.cart{
+    display: flex;
+    gap: 100px;
+    margin-top: 60px;
+}
+.cart-item img{
+    border: 4px solid #1e1e1e;
+    border-radius: 50%;
+}
+.cart-item h3{
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin-top: 30px;
+    margin-bottom: 6px;
+}
 
 /* small device style  */
 @media screen and (max-width:576px) {
@@ -195,15 +206,27 @@ main > section{
         font-size: 2.25rem;
     }
     .btn-primary, .btn-secondary{
-        padding: 14px 25px;
+        padding: 12px 15px;
     }
     .free-workout{
         top: 8%;
-        right: -4%;
+        right: -1%;
     }
     .video-tutorial{
         bottom: 42%;
-        left: -4%;
+        left: 0%;
     }
-
+    .banner-btn{
+        text-align: center;
+    }
+    .section-title{
+        font-size: 1.875rem;
+    }
+    .cart{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .cart-item img{
+        margin-top: 40px;
+    }
 }

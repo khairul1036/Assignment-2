@@ -22,10 +22,45 @@
     max-width: 80%;
     margin: 0 auto;
 }
+main > section{
+    margin: 100px 0px;
+}
 .orange-color{
     color: #E6533C;
 }
 .secondary-color{
+    color: rgba(255, 255, 255, 50%);
+}
+.btn-primary{
+    background-color: #E6533C;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 42px;
+    padding: 14px 46px;
+    cursor: pointer;
+}
+.btn-secondary{
+    background-color: transparent;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: 1px solid #ffffff;
+    border-radius: 42px;
+    padding: 14px 46px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.section-title{
+    font-weight: 900;
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+.section-description{
+    max-width: 670px;
+    margin: 0 auto;
+    font-size: 0.875rem;
     color: rgba(255, 255, 255, 50%);
 }
 
@@ -62,6 +97,79 @@
     display: none;
 }
 
+ /* banner section style  */
+ .header{
+    background: linear-gradient(180.00deg, rgb(0, 0, 0, 100%),rgba(37, 37, 37, 0.9),rgba(0, 0, 0, 100%));
+}
+.banner-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 150px;
+    gap: 85px;
+}
+.banner-content{
+    max-width: 600px;
+}
+.banner-title{
+    font-weight: 900;
+    font-size: 4.8rem;
+}
+.banner-description{
+    font-size: 1rem;        
+    margin: 28px 0px;
+    line-height: 30px;
+}
+.banner-image{
+    position: relative;
+}
+.free-workout{
+    position: absolute;
+    top: 25%;
+    right: -15%;
+    background-color: rgba(255, 255, 255, 10%);
+    border-radius: 12px;
+    padding: 15px 23px;
+}
+.free-workout h2{
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+.free-workout p{
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 65%);
+}
+.video-tutorial{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: absolute;
+    bottom: 12%;
+    left: -35%;
+    background-color: rgba(255, 255, 255, 10%);
+    border-radius: 12px;
+    padding: 15px 23px;
+}
+.video-tutorial .play-icon{
+    background-color: #E6533C;
+    padding: 20px;
+    border-radius: 50%;
+}
+.video-tutorial h3{
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+.video-tutorial p{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 65%);
+}
+
+/* habits section style  */
+.habit-container{
+
+    text-align: center;
+
+}
 
 
 /* small device style  */
@@ -77,5 +185,25 @@
     }
     .hamburger i{
         font-size: 1.5rem;
-     }
+    }
+    .banner-container{
+        flex-direction: column;
+        margin: 0px 20px;
+    }
+    .banner-title{
+        max-width: 285px;
+        font-size: 2.25rem;
+    }
+    .btn-primary, .btn-secondary{
+        padding: 14px 25px;
+    }
+    .free-workout{
+        top: 8%;
+        right: -4%;
+    }
+    .video-tutorial{
+        bottom: 42%;
+        left: -4%;
+    }
+
 }

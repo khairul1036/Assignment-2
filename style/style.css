@@ -8,3 +8,74 @@
         "slnt" 0;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* share style  */
+.theme-color{
+    background-color: black;
+    color: white;
+}
+.main{
+    max-width: 80%;
+    margin: 0 auto;
+}
+.orange-color{
+    color: #E6533C;
+}
+.secondary-color{
+    color: rgba(255, 255, 255, 50%);
+}
+
+/* nav bar style  */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 38px 150px;
+}
+.nav ul{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    list-style: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    padding: 12px 24px 12px 4px;
+}
+.nav li a{
+    text-decoration: none;
+    color: white;
+}
+.brand{
+    font-weight: 800;
+    font-size: 2.25rem;
+}
+.nav-home-btn{
+    background-color: #E6533C;
+    padding: 8px 20px;
+    border-radius: 46px;
+}
+.hamburger{
+    display: none;
+}
+
+
+
+/* small device style  */
+@media screen and (max-width:576px) {
+    .nav{
+        margin: 50px 20px;
+    }
+    .nav ul{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .hamburger i{
+        font-size: 1.5rem;
+     }
+}

@@ -235,6 +235,73 @@
     grid-template-columns: 0.9fr 0.5fr 0.7fr;
 }
 
+/* Start Today section  */
+.start-today-content p{
+    font-size: 0.875rem;
+}
+.start-today-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 150px;
+}
+.body-building-container{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border-left: 3px solid #6b6b6b;
+    padding-left: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.body-building-container h1{
+    font-size: 3rem;
+    transition: color 0.3s ease;
+}
+.body-building-container .body-building-content span {
+    font-size: 0.825rem;
+    background-color: #6b6b6b;
+    padding: 2px 5px;
+    transition: background-color 0.3s ease;
+}
+.body-building-container .body-building-content h1 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-top: 5px;
+    transition: color 0.3s ease;
+}
+.body-building-container:hover {
+    border-left: 5px solid #E6533C;
+    transition: border-left 0.3s ease; 
+}
+.body-building-container:hover .body-building-content span {
+    background-color: #E6533C;
+}
+.body-building-container:hover .body-building-content h1 {
+    color: #E6533C;
+}
+.start-today-images{
+    padding-right: 100px;
+}
+.start-today-images .image{
+    transform: rotate(12deg);
+}
+.start-today-images .image p{
+    text-align: center;
+    margin-top: -20px;
+}
+.start-today-images .image span{
+    font-weight: 700;
+    font-size: 1rem;
+    background-color: #E6533C;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+.start-today-images img{
+    width: 100%;
+    height: 500px;
+    border-radius: 5px;
+}
 
 /* bmi calculator section style  */
 .bmi-section-content{
@@ -296,19 +363,6 @@ input, select{
     border: none;
     padding: 15px;
     border-radius: 8px;
-}
-
-/* more-center section style  */
-.more-center{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 100px;
-}
-.more-center-numbers{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
 }
 
 /* our team section style  */
@@ -389,12 +443,15 @@ input, select{
     padding: 25px 0px;
     color: rgba(255, 255, 255, 50%);
 }
+
+
+
 /* small device style  */
-.hide{
+.hide2{
     display: none;
 }
 @media screen and (max-width:576px) {
-    .hide2{
+    .hide{
         display: none;
     }
     .miama-font{
@@ -458,6 +515,32 @@ input, select{
     }
     .team-container{
         grid-template-columns: repeat(1,1fr);
+    }
+    .start-today-container{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .body-building-container h1{
+        font-size: 2.5rem;
+    }
+    .body-building-container{
+        border-left: 3px solid #6b6b6b;
+        padding-left: 15px;
+        margin: 15px 0px;
+    }
+    .body-building-container .body-building-content span {
+        font-size: 0.6rem;
+        padding: 2px 5px;
+    }
+    .body-building-container .body-building-content h1 {
+        font-size: 1.5rem;
+        margin-top: 5px;
+    }
+    .start-today-images{
+        padding: 0;
+    }
+    .start-today-images img{
+        height: 400px;
     }
     .bmi-section-content{
         padding: 20px;

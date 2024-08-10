@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-/* @import url('https://fonts.cdnfonts.com/css/miama-nueva'); */
 
 .inter-normal{
     font-family: "Inter", sans-serif;
@@ -8,7 +7,6 @@
     font-variation-settings: "slnt" 0;
 }
 .miama-font{
-    /* font-family: 'Miama Nueva', sans-serif; */
     font-family: 'Miama', sans-serif;
     font-size: 8rem;
     font-weight: 100;
@@ -220,19 +218,87 @@
 }
 
  /* exercises section style */
-.exercises-gelary img{
+.text-section{
+    width: 55%;
+}
+.image-section{
     width: 100%;
-    height: 250px;
 }
-.exercises-gelary .row1{
-    display: grid;
-    grid-template-columns: 0.5fr 1fr 0.6fr;
-    border:1px solid #E6533C;
-    margin: 0;
+.first-row-image, .second-row-image{
+    display: flex;
+    height: 200px;
 }
-.exercises-gelary .row2{
-    display: grid;
-    grid-template-columns: 0.9fr 0.5fr 0.7fr;
+.image1 span, .image2 span, .image3 span, .image4 span, .image5 span, .image6 span{
+    font-size: 0.825rem;
+    padding: 27px;
+    width: calc(100% - (27px + 27px));
+    height: calc(100% - (27px + 27px));
+    display: flex;
+}
+.image1{
+    background-image: url(../images/exercise1.jpg), linear-gradient(to top, #000000, #232323, #000000);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 30%;
+}
+.image1 span{
+    background-color: rgb(6, 255, 210, 50%);
+    flex-direction: column-reverse;
+}
+.image2{
+    background-image: url(../images/exercise2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 45%;
+}
+.image2 span{
+    background-color: rgb(255, 0, 0, 30%);
+}
+.image3{
+    background-image: url(../images/exercise3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 30%;
+}
+.image3 span{
+    background-color: rgb(0, 0, 0, 50%);
+    flex-direction: column-reverse;
+}
+.image4{
+    background-image: url(../images/exercise4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 40%;
+}
+.image4 span{
+    background-color: rgb(0, 0, 0, 50%);
+    flex-direction: row-reverse;
+}
+.image5{
+    background-image: url(../images/exercise5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 25%;
+}
+.image5 span{
+    background-color: rgb(66, 255, 0, 30%);
+    flex-direction: column-reverse;
+}
+.image6{
+    background-image: url(../images/exercise6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 35%;
+}
+.image6 span{
+    background-color: rgb(0, 71, 255, 30%);
+    flex-direction: column-reverse;
 }
 
 /* Start Today section  */
@@ -447,9 +513,6 @@ input, select{
 
 
 /* small device style  */
-.hide2{
-    display: none;
-}
 @media screen and (max-width:576px) {
     .hide{
         display: none;
@@ -513,6 +576,32 @@ input, select{
     .run-image{
         width: 280px;
     }
+    .first-row-image, .second-row-image{
+        height: 140px;
+    }
+    .text-section{
+        width: 100%;
+    }
+    .image3, .image6{
+        display: none;
+    }
+    .image1{
+        width: 50%;
+    }
+    .image2{
+        width: 50%;
+        background-position-x: 60%;
+        background-position-y: 20%;
+    }
+    .training-section{
+        margin: 20px;
+    }
+    .image4{
+        width: 45%;
+    }
+    .image5{
+        width: 55%;
+    }
     .team-container{
         grid-template-columns: repeat(1,1fr);
     }
@@ -558,14 +647,6 @@ input, select{
     .input-field{
         display: flex;
     }
-
-
-
-
-
-
-
-
     .footer-content{
         flex-direction: column;
         align-items: start;

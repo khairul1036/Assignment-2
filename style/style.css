@@ -236,7 +236,7 @@
     display: flex;
 }
 .image1{
-    background-image: url(../images/exercise1.jpg), linear-gradient(to top, #000000, #232323, #000000);
+    background-image: url(../images/exercise1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -322,23 +322,23 @@
 }
 .body-building-container h1{
     font-size: 3rem;
-    transition: color 0.3s ease;
+    transition: color 0.3s linear;
 }
 .body-building-container .body-building-content span {
     font-size: 0.825rem;
     background-color: #6b6b6b;
     padding: 2px 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s linear;
 }
 .body-building-container .body-building-content h1 {
     font-size: 1.8rem;
     color: #ffffff;
     margin-top: 5px;
-    transition: color 0.3s ease;
+    transition: color 0.3s linear;
 }
 .body-building-container:hover {
     border-left: 5px solid #E6533C;
-    transition: border-left 0.3s ease; 
+    transition: border-left 0.3s linear;
 }
 .body-building-container:hover .body-building-content span {
     background-color: #E6533C;
@@ -501,11 +501,14 @@ input, select{
     line-height: 25px;
 }
 .footer .copy-right{
-    padding: 0px 150px ;
+    border-style: solid;
+    border-width: 2px 0px 0px 0px;
+    border-color: #323232;
+    margin: 0px 190px;
 }
 .copy-right p{
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 1rem;
     padding: 25px 0px;
     color: rgba(255, 255, 255, 50%);
 }
@@ -546,7 +549,8 @@ input, select{
         line-height: 40px;
     }
     .btn-primary, .btn-secondary{
-        padding: 12px 15px;
+        font-weight: 500;
+        padding: 12px 20px;
     }
     .free-workout{
         top: 8%;
@@ -565,7 +569,8 @@ input, select{
     }
     .cart{
         flex-direction: column;
-        gap: 20px;
+        gap: 5px;
+        padding: 0px 60px;
     }
     .run-container{
         flex-direction: column;
@@ -654,6 +659,6 @@ input, select{
         padding: 20px;
     }
     .footer .copy-right{
-        padding: 0px 0px;
+        margin: 0px 20px;
     }   
 }
